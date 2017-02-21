@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jakob Fuglsang - Portfolio - Mediegrafiker</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UFT-8">
+    <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="index.html" id="imglogo"><img id="logoimg" src="images/jf_logo.png"></a>
+            <li class="navli"><a href="portfolio.html" class="navlink">Portfolio</a></li>
+            <li class="navli"><a href="about.html" class="navlink">Om mig</a></li>
+            <li class="navli"><a href="contact.html" class="navlink">Kontakt</a></li>
+        </ul>
+    </nav>    
+    
+    <div class="titlecontainer">
+    <h1 id="title"> HEJ!</h1>
+    <h2 id="secondtitle">Mit navn er Jakob Fuglsang</h2>
+    <hr id="titleline">
+    <p id="titletext">Jeg er i gang med at uddanne mig som mediegrafiker bla bla bla bla bla bla bla bla bla bla</p>
+        <div class="contactbutton">
+            <a id="buttonlink" href="contact.html">
+            <h3 id="button">Kontakt mig!</h3>
+            </a>
+        </div>
+    </div>
+    <a href="#design" id="arrowscroll">
+    <i class="material-icons" id="arrow">keyboard_arrow_down</i>
+    </a>
+    
+    <div class="icon">
+      <a class="iconlink" href="#"><img src="images/Graphic.png" class="imgicon" id="1icon"></a>
+      <a class="iconlink" href="#"><img src="images/picture.png" class="imgicon" id="2icon"></a>
+      <a class="iconlink" href="#"><img src="images/Typografi.png" class="imgicon"  id="3icon"></a>
+      <a class="iconlink" href="#"><img src="images/Web.png" class="imgicon"  id="4icon"></a>
+          <div class="icontext">
+        <h2 id="design">Grafisk  Design</h2>
+        <h2 id="billede">Grafik & billede</h2>
+        <h2 id="typografi">Typografi & ombrydning</h2>
+        <h2 id="workflow">Workflow & produktion</h2>
+    </div>
+</div>
+</body>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+<footer>
+    <div class="ommig">
+            <h6 id="ommigh">Om mig</h6>
+            <hr class="footerline"> <br>
+            <p id="ommigp">FYLDETEKST FYLDETEKST FYLDETEKST FYLDETEKST FYLDETEKST FYLDETEKST FYLDETEKST FYLDETEKST FYLDETEKST FYLDETEKST FYLDETEKST FYLDETEKST FYLDETEKST </p>
+        </div>
+    
+    <div class="quicklinks">
+            <h6 id="quicklinksh">Quick links</h6>
+            <hr class="footerline"> <br>
+            <ul class="footerul">
+                <li class="footerli"><a href="index.html" class="footerlink">→ Forside</a></li> <br>
+                <li class="footerli"><a href="contact.html" class="footerlink">→ Kontakt</a></li> <br>
+                <li class="footerli"><a href="about.html" class="footerlink">→ Om mig</a></li> <br>
+                <li class="footerli"><a href="portfolio.html" class="footerlink">→ Portfolio</a></li>
+            </ul>
+        </div>
+    
+    <div class="kontaktdetaljer">
+            <h6 id="kontaktdetaljer"> Kontakt detaljer</h6>
+            <hr class="footerline"> <br>
+            <i class="material-icons">phone</i> <p id="phone"> 45+ 60 49 34 77</p> <br>
+            <i class="material-icons">email</i> <p id="mail"> Jakobfc@hotmail.com</p> <br><br>
+            <a href="https://www.facebook.com/jakob.fuglsang1"><img src="images/facebooklogo.png" id="facebook"></a>
+            <a href="https://www.instagram.com/fuglsang_design/"><img src="images/instagramlogo.png" id="instagram"></a>
+        </div>
+    
+</footer>
+
+
+
+
+
+
+</html>
