@@ -2,6 +2,8 @@ body {
     margin: 0;
     background-image: url(../images/index-background.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Navbar start */
@@ -42,6 +44,9 @@ a.navlink:hover {
     text-decoration: underline;
 }
 
+a#active {
+    text-decoration: underline;
+}
 /* Navbar Slut */
 
 /* Footer start */
@@ -165,7 +170,7 @@ form {
     width: 40%;
     margin-left: 10%;
     margin-top: 5%;
-    display: block;
+    display: inline-block;
 }
 
 label {
@@ -176,7 +181,7 @@ label {
     display: block;
 }
 
-input {
+input.expand{
     width: 50%;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
@@ -188,8 +193,8 @@ input {
     padding: 12px 20px;
 }
 
-input:focus {
-    width: 100%;
+input.expand:focus {
+    width: 90%;
     border: 3px solid #555;
 }
 
@@ -207,6 +212,29 @@ textarea {
 }
 
 textarea:focus {
-    width: 100%;
+    width: 90%;
     border: 3px solid #555;
+}
+
+input#send {
+    margin-top: 2%;
+    width: 50%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    background-color: red;
+    outline: none;
+    padding: 12px 20px;
+    color: white;
+}
+
+input#send:hover {
+    background-color: firebrick;
+}
+#map {
+    width: 40%;
+    height: 503px;
+    margin-right: 10%;
+    margin-top: 7%;
+    display: inline-block;
+    float: right;
 }

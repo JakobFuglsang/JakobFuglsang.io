@@ -14,22 +14,35 @@
             <a href="index.html" id="imglogo"><img id="logoimg" src="images/jf_logo.png"></a>
             <li class="navli"><a href="portfolio.html" class="navlink">Portfolio</a></li>
             <li class="navli"><a href="about.html" class="navlink">Om mig</a></li>
-            <li class="navli"><a href="contact.html" class="navlink">Kontakt</a></li>
+            <li class="navli"><a href="contact.html" class="navlink" id="active">Kontakt</a></li>
         </ul>
     </nav>    
         
-        <div class="form">
     <form>
         <label for="fname">Fulde navn</label> <br>
-        <input type="text" id="fname" name="fname" placeholder="John Nielsen (*Foreksempel)"><br>
+        <input class="expand" type="text" id="fname" name="fname" placeholder="John Nielsen (*Foreksempel)"><br>
         <label for="email"> Email</label><br>
-        <input type="text" id="email" name="email" placeholder="JohnNielsen@gmail.com (*Foreksempel)"><br>
+        <input class="expand" type="text" id="email" name="email" placeholder="JohnNielsen@gmail.com (*Foreksempel)"><br>
         <label for="emne">Emne</label><br>
-        <input type="text" id="emne" name="emne" placeholder="rådig elevplads (*Foreksempel)"><br>
+        <input class="expand" type="text" id="emne" name="emne" placeholder="rådig elevplads (*Foreksempel)"><br>
         <label for="besked">Besked</label><br>
         <textarea id="besked" placeholder="Vi søger lærling (*foreksempel)" onfocus='heightanimate();'></textarea>
+        <input id="send" type="submit" value="Send">
     </form>
-        </div>
+        
+    <div id="map">
+    </div>
+    <script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(57.05118,9.964019);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJFk2XAXreujP-3bWlt2hmYxd3LW_7BVQ&callback=myMap"></script>
     
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
