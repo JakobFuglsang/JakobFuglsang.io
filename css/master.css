@@ -3,6 +3,7 @@ body {
     background-image: url(../images/index-background.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Navbar start */
@@ -49,6 +50,10 @@ a.navlink:hover {
 footer {
     background-color: rgba(0, 0, 0, 0.2);
     height: 200px;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    margin-top: -3em;
 }
 
 hr.footerline {
@@ -236,12 +241,14 @@ h3#button {
 img.imgicon {
     width: 12%;
     padding: 5% 5% 0 5%;
+    cursor: pointer;
 }
 
 
 .icon {
     margin-left: 10%;
     margin-top: 20%;
+    cursor: pointer;
 }
 
 h2#design {
@@ -293,4 +300,8 @@ i.material-icons#arrow {
     display: inline-block;
     margin-top: 13%;
     margin-left: 50%;
+}
+
+a.iconlink {
+    cursor: pointer;
 }
