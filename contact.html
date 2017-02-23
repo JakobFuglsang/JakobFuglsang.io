@@ -18,15 +18,16 @@
         </ul>
     </nav>    
         
+    <h2 id="titlecontact">Send mig en mail!</h2>
     <form>
-        <label for="fname">Fulde navn</label> <br>
+        <label id="top" for="fname">Fulde navn</label> <br>
         <input class="expand" type="text" id="fname" name="fname" placeholder="John Nielsen (*Foreksempel)"><br>
         <label for="email"> Email</label><br>
         <input class="expand" type="text" id="email" name="email" placeholder="JohnNielsen@gmail.com (*Foreksempel)"><br>
         <label for="emne">Emne</label><br>
         <input class="expand" type="text" id="emne" name="emne" placeholder="rådig elevplads (*Foreksempel)"><br>
         <label for="besked">Besked</label><br>
-        <textarea id="besked" placeholder="Vi søger lærling (*foreksempel)" onfocus='heightanimate();'></textarea>
+        <textarea id="besked" placeholder="Vi søger lærling (*Foreksempel)" onfocus='heightanimate();'></textarea>
         <input id="send" type="submit" value="Send">
     </form>
         
@@ -43,8 +44,34 @@ function myMap() {
 }
 </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJFk2XAXreujP-3bWlt2hmYxd3LW_7BVQ&callback=myMap"></script>
+
+    <div class="kontaktdetails">
+        <h2 id="kontakdetailtitle">Kontakt detaljer</h2>
+        <hr id="little1"> <br>
+        <i class="material-icons">phone</i><p id="phone1">45+ 60 49 34 77</p> <br>
+        <i class="material-icons">email</i><p id="email1">Jakobfc@hotmail.com</p> <br>
+        <i class="material-icons" id="homeicon">home</i> <p id="home1"> Lundgårdsvej 11b <br> Hjørring 9800 <br> Denmark</p>
+    </div>
     
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="socialmedia">
+        <a href="https://www.facebook.com/jakob.fuglsang1" id="facebooklink">
+        <div class="facebook">
+    <h2 id="facebooktitle">Facebook</h2>
+        <hr id="little2"> <br>
+    <img id="facebookimg" src="images/facebooklogo.png">
+    <p id="fblink">/Jakob.Fuglsang1</p>
+        </div>
+    </a>
+    <a href="https://www.instagram.com/fuglsang_design/" id="instagramlink">
+        <div class="instagram">
+    <h2 id="instagramtitle">Instagram</h2>
+            <hr id="little2"> <br>
+    <img id="instagramimg" src="images/instagramlogo.png">
+    <p id="iglink">/Fuglsang_Design</p>
+        </div>
+    </a>
+    </div>
+    <br><br><br><br>
 </body>
     
 <footer>

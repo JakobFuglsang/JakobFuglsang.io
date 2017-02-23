@@ -169,7 +169,7 @@ img#instagram {
 form {
     width: 40%;
     margin-left: 10%;
-    margin-top: 5%;
+    
     display: inline-block;
 }
 
@@ -179,6 +179,10 @@ label {
     margin-top: 20px;
     margin-bottom: -15px;
     display: block;
+}
+
+label#top {
+    margin-top: 0;
 }
 
 input.expand{
@@ -234,7 +238,130 @@ input#send:hover {
     width: 40%;
     height: 503px;
     margin-right: 10%;
-    margin-top: 7%;
     display: inline-block;
     float: right;
 }
+
+h2#titlecontact {
+    margin-left: 10%;
+    font-family: arial;
+    font-size: 25pt;
+    margin-bottom: 1%;
+}
+
+.kontaktdetails {
+    margin: 10% 0 0 10%;
+    display: inline-block;
+    width: 40%;
+}
+
+p#phone1 {
+    font-family: arial;
+    display: inline-block;
+    font-size: 12pt;
+    vertical-align: super;
+    margin-top: 10px;
+}
+
+p#email1 {
+    font-family: arial;
+    display: inline-block;
+    font-size: 12pt;
+    vertical-align: super;
+    margin-top: 10px;
+}
+
+p#home1 {
+    font-family: arial;
+    display: inline-block;
+    font-size: 12pt;
+    vertical-align: super;
+    margin-top: 10px;
+}
+
+i#homeicon {
+    vertical-align: top; 
+    margin-top: 6px;
+}
+
+h2#kontakdetailtitle {
+    font-family: arial;
+    font-size: 16pt;
+    margin: 0;
+}
+
+hr#little1 {
+    border: 0;
+    height: 2px;
+    background-color: black;
+    width: 13%;
+    float: left;
+}
+
+.socialmedia {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.facebook {
+    width: 49%;
+    display: inline-block;
+}
+
+.instagram {
+    width: 49%;
+    display: inline-block;
+}
+
+h2#facebooktitle {
+    margin: 0;
+    font-family: arial;
+    font-size: 16pt;
+}
+
+hr#little2 {
+    border: 0;
+    height: 2px;
+    background-color: black;
+    width: 26%;
+    float: left;
+}
+
+img#facebookimg {
+    width: 50%;
+    margin-top: 10px;
+}
+
+p#fblink {
+    font-family: arial;
+    margin: 0;
+}
+
+a#facebooklink {
+    text-decoration: none;
+    color: black;
+}
+
+a#instagramlink {
+    text-decoration: none;
+    color: black;
+}
+
+h2#instagramtitle {
+    margin: 0;
+    font-family: arial;
+    font-size: 16pt;
+}
+
+img#instagramimg {
+    width: 50%;
+    margin-top: 10px;
+}
+
+p#iglink {
+    font-family: arial;
+    margin: 0;
+}
+
