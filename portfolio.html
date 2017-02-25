@@ -3,20 +3,101 @@
 
 <head>
     <title>Jakob Fuglsang - Portfolio - Mediegrafiker</title>
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/portfolio-style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="UFT-8">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <ul>
+        <ul class="navlist">
             <a href="index.html" id="imglogo"><img id="logoimg" src="images/jf_logo.png"></a>
             <li class="navli"><a href="portfolio.html" class="navlink">Portfolio</a></li>
             <li class="navli"><a href="about.html" class="navlink">Om mig</a></li>
             <li class="navli"><a href="contact.html" class="navlink">Kontakt</a></li>
         </ul>
     </nav>    
+    
+    <div class="container wrapper">
+
+			<br />
+			<h2 id="title">Min Portfolio</h2>
+			<hr id="titleline">
+			<div class="pull-right">
+				<button class="btn btn-small btn-primary" id="all" data-toggle="portfilter" data-target="all">
+					All
+				</button>
+				<button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="Grafik">
+					Grafik
+				</button>
+				<button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="Typografi">
+					Typografi
+				</button>
+				<button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="Workflow">
+					Workflow
+				</button>
+                <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="GrafiskDesign">
+					Grafisk Design
+				</button>
+			</div>
+			<div class="clearfix"></div>
+
+			<br />
+
+			<ul class="thumbnails gallery">
+				<li class="span3 clearfix" data-tag='Workflow'>
+					<div class="thumbnail">
+						<img alt="270x170" src="http://placehold.it/270x170" />
+						<div class="caption">
+							<h4>Workflow Project</h4>
+						</div>
+					</div>
+				</li>
+				<li class="span3" data-tag='Grafik'>
+					<div class="thumbnail" >
+						<img alt="270x170" src="http://placehold.it/270x170" />
+						<div class="caption">
+							<h4>Grafik Project</h4>
+
+						</div>
+					</div>
+				</li>
+				<li class="span3" data-tag='Typografi'>
+					<div class="thumbnail">
+						<img alt="270x170" src="http://placehold.it/270x170" />
+						<div class="caption">
+							<h4>Typografi Project</h4>
+
+						</div>
+					</div>
+				</li>
+				<li class="span3" data-tag='GrafiskDesign'>
+					<div class="thumbnail">
+						<img alt="270x170" src="http://placehold.it/270x170" />
+						<div class="caption">
+							<h4>Grafisk Design Project</h4>
+						</div>
+					</div>
+				</li>
+				<li class="span3" data-tag='Grafik'>
+					<div class="thumbnail" >
+						<img alt="270x170" src="http://placehold.it/270x170" />
+						<div class="caption">
+							<h4>Grafik Project</h4>
+						</div>
+					</div>
+				</li>
+				<li class="span3" data-tag='Typografi'>
+					<div class="thumbnail">
+						<img alt="270x170" src="http://placehold.it/270x170" />
+						<div class="caption">
+							<h4>Typografi Project</h4>
+						</div>
+					</div>
+				</li>
+        </ul>
+        </div>
     
 </body>
     
@@ -48,5 +129,6 @@
         </div>
     
 </footer>
-
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="bootstrap-portfilter.min.js"></script>
 </html>
