@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-image: url(../images/index-background.png);
     background-size: cover;
+    background-position: center;
 }
 
 /* Navbar start */
@@ -39,6 +40,10 @@ a.navlink {
 }
 
 a.navlink:hover {
+    text-decoration: underline;
+}
+
+a#active {
     text-decoration: underline;
 }
 
@@ -160,3 +165,105 @@ img#instagram {
 }
 
 /* Footer slut */
+
+.aboutheader {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/Aboutbanner.png);
+    background-size: cover;
+    margin-top: 5%;
+}
+
+h1#headertitle {
+    font-family: arial;
+    color: white;
+    margin: 0 0 0 10%;
+    padding-top: 25px;
+    display: block;
+}
+
+p#headerresume {
+    font-family: arial;
+    color: white;
+    margin: 0 50% 0 10%;
+    font-size: 12pt;
+}
+
+hr#headerline1 {
+    width: 10%;
+    border: 0;
+    background-color: white;
+    height: 2px;
+    float: left;
+    margin-left: 10%;
+}
+
+hr.spacingline {
+    height: 3px;
+    border: 0;
+    background-color: grey;
+    margin: 5% 0 5% 0;
+}
+
+.fritid {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/Fritidbanner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+h1#fritidtitle {
+    margin: 0 0 0 50%;
+    padding-top: 25px;
+    font-family: arial;
+    color: white;
+}
+
+p#fritidresume {
+    font-family: arial;
+    color: white;
+    margin: 0 10% 0 50%;
+    font-size: 12pt;
+}
+
+hr#headerline2 {
+    width: 10%;
+    border: 0;
+    background-color: white;
+    height: 2px;
+    float: left;
+    margin-left: 50%;
+}
+
+.uddannelse {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/Uddannelsebanner.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10%;
+}
+
+h1#uddannelsetitle {
+    font-family: arial;
+    color: white;
+    margin: 0 0 0 10%;
+    padding-top: 25px;
+}
+
+hr#headerline3 {
+    width: 10%;
+    border: 0;
+    background-color: white;
+    height: 2px;
+    float: left;
+    margin-left: 10%;
+}
+
+p#uddannelseresume {
+    margin: 0 50% 0 10%;
+    font-family: arial;
+    font-size: 12pt;
+    color: white;
+}
