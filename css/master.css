@@ -14,6 +14,19 @@ nav {
     height: 70px;
 }
 
+a#burgernav {
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+    display: none;
+    float: right;
+    margin: -40px 0 0 0;
+}
+
+li.icon {
+     list-style-type: none;
+}
+
 img#logoimg {
     margin-top: 5px;
     margin-left: 5px;
@@ -24,18 +37,20 @@ img#logoimg {
 
 ul li.navli {
     display: inline-block;
-    float: right;
-    margin-top: 20px;
     padding-left: 50px;
 }
 
-ul {
-    margin-right: 50px;
+nav ul {
+    margin: 18px 50px 0 0;
+    padding: 0;
+    float: right;
+    display: inline-block;
 }
 
 a.navlink {
     text-decoration: none;
     color: black;
+    display: inline-block;
     font-family: arial;
     font-size: 20pt;
 }
@@ -44,6 +59,9 @@ a.navlink:hover {
     text-decoration: underline;
 }
 
+li.icon {
+    display: none;
+}
 /* Navbar Slut */
 
 /* Footer start */
@@ -305,3 +323,77 @@ i.material-icons#arrow {
 a.iconlink {
     cursor: pointer;
 }
+
+/* Responsive start */
+
+@media screen and (max-width:800px) {
+    li.navli {
+        display: none;
+    }
+    a.navlink {
+        display: none;
+    }
+    a#burgernav {
+        float: right;
+        display: inline-block;
+    }
+    
+    a#burgernav:hover {
+        color: red;
+    }
+    
+     a#burgernav:active {
+        color: red;
+    }
+    
+    li.icon {
+        display: inline-block;
+        float: right;
+    }
+    
+    li a {
+        -o-transition:.3s;
+        -ms-transition:.3s;
+        -moz-transition:.3s;
+        -webkit-transition:.3s;
+        transition:.3s;
+    }
+
+@media screen and (max-width:800px) {
+    ul.topnav.responsive {position: relative;}
+        
+    ul.topnav.responsive li {
+        float: none;
+        text-align: center;
+        display: inline;
+    
+  }
+  ul.topnav.responsive li a {
+        display: block;
+        text-align: center;
+        text-align: left;
+        position: relative;
+      top: 36px;
+  }
+    ul.topnav li.icon {
+        color: red;
+    }
+}
+   
+    ul.topnav.responsive li a:hover {
+        text-decoration: none;
+        color: red;
+    }
+}
+
+    h1#title {
+        margin-top: 120px;
+}
+@media screen and (max-width: 1024px) {
+    .contactbutton {
+        display: none;
+    }
+}
+
+
+
